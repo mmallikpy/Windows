@@ -1,4 +1,6 @@
-﻿$file_list = @("C:\Users\MN\Desktop\Ethical_hacker.jpg"; "C:\Users\MN\Desktop\Windows_7_x64-2024-03-23-13-39-50.png")
+# This script can find the file Hash[md5, sha1, sha256] value.
+
+$file_list = @("C:\Users\MN\Desktop\Ethical_hacker.jpg"; "C:\Users\MN\Desktop\Windows_7_x64-2024-03-23-13-39-50.png")
 
 foreach ($x in $file_list) {  
     $hash_md5 = Get-FileHash -Path "$x" -Algorithm MD5
