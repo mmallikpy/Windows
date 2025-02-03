@@ -1,0 +1,114 @@
+Get-ADUser -Identity coturagdhaka
+Get-ADUser -Identity coturagdhaka -Properties *
+Get-ADUser -filter {Enabled -eq $True -and LastLogonDate} | Select-Object -Property "Name"
+
+
+
+
+PS C:\Users\Administrator> Get-ADUser -Identity UserName -Properties *
+
+AccountExpirationDate                : 
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   : 
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 133806420670168487
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : test.local/ASA-VPN/AllBrunch/coturagdhaka
+Certificates                         : {}
+City                                 : 
+CN                                   : coturagdhaka
+codePage                             : 0
+Company                              : 
+CompoundIdentitySupported            : {}
+Country                              : 
+countryCode                          : 0
+Created                              : 12/22/2024 2:03:16 PM
+createTimeStamp                      : 12/22/2024 2:03:16 PM
+Deleted                              : 
+Department                           : 
+Description                          : 
+DisplayName                          : 
+DistinguishedName                    : CN=coturagdhaka,OU=AllBrunch,OU=ASA-VPN,DC=test,DC=local
+Division                             : 
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {1/31/2025 1:39:47 PM, 1/1/1601 6:00:00 AM}
+EmailAddress                         : 
+EmployeeID                           : 
+EmployeeNumber                       : 
+Enabled                              : True
+Fax                                  : 
+GivenName                            : 
+HomeDirectory                        : 
+HomedirRequired                      : False
+HomeDrive                            : 
+HomePage                             : 
+HomePhone                            : 
+Initials                             : 
+instanceType                         : 4
+isDeleted                            : 
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               : 1/6/2025 7:01:07 PM
+LastKnownParent                      : 
+lastLogoff                           : 0
+lastLogon                            : 133806420859553277
+LastLogonDate                        : 1/29/2025 10:59:28 AM
+lastLogonTimestamp                   : 133826003688078289
+LockedOut                            : False
+logonCount                           : 0
+LogonWorkstations                    : 
+Manager                              : 
+MemberOf                             : {CN=anyConnect,OU=ASA-VPN,DC=test,DC=local}
+MNSLogonAccount                      : False
+MobilePhone                          : 
+Modified                             : 1/31/2025 1:39:47 PM
+modifyTimeStamp                      : 1/31/2025 1:39:47 PM
+msDS-User-Account-Control-Computed   : 8388608
+Name                                 : coturagdhaka
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Person,CN=Schema,CN=Configuration,DC=test,DC=local
+ObjectClass                          : user
+ObjectGUID                           : 909f8724-8baf-4007-ada1-1939379fe407
+objectSid                            : S-1-5-21-2243506214-2056915717-1095643933-108904
+Office                               : 
+OfficePhone                          : 
+Organization                         : 
+OtherName                            : 
+PasswordExpired                      : True
+PasswordLastSet                      : 12/22/2024 2:03:16 PM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : True
+POBox                                : 
+PostalCode                           : 
+PrimaryGroup                         : CN=Domain Users,CN=Users,DC=teste,DC=local
+primaryGroupID                       : 513
+PrincipalsAllowedToDelegateToAccount : {}
+ProfilePath                          : 
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 133793281960607044
+SamAccountName                       : coturagdhaka
+sAMAccountType                       : 805306368
+ScriptPath                           : 
+sDRightsEffective                    : 15
+ServicePrincipalNames                : {}
+SID                                  : S-1-5-21-2243506214-2056915717-1095643933-108904
+SIDHistory                           : {}
+SmartcardLogonRequired               : False
+State                                : 
+StreetAddress                        : 
+Surname                              : 
+Title                                : 
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 544
+userCertificate                      : {}
+UserPrincipalName                    : coturagdhaka@test.local
+uSNChanged                           : 3015105
+uSNCreated                           : 2636906
+whenChanged                          : 1/31/2025 1:39:47 PM
+whenCreated                          : 12/22/2024 2:03:16 PM
