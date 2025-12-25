@@ -1,3 +1,16 @@
+--------------------------------------------
+Get-Command -Name Get-Content
+Get-AppxLog
+Get-NetAdapterAdvancedProperty
+Get-childitem -Path D:\
+Get-Content -Path 'D:\Apic Controller.JPG'
+Get-ChildItem -Path C:\Users
+Get-ChildItem | Sort-Object Length -Descending
+Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
+Get-ChildItem | Sort-Object Length 
+Get-ChildItem | Where-Object -Property Length -GE 100
+Get-Service | Select-Object DisplayName
+------------------------------------------------------
 Get-ADUser -Identity coturagdhaka
 Get-ADUser -Identity coturagdhaka -Properties *
 Get-ADUser -filter {Enabled -eq $True -and LastLogonDate} | Select-Object -Property "Name"
